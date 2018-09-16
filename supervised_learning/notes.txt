@@ -22,6 +22,6 @@ Observations:
 ### Pruning code:
 https://stackoverflow.com/questions/39002230/possible-to-modify-prune-learned-trees-in-scikit-learn
 
-
+TODO:
 ** Need to obtain error rates to show overfitting!
-
+** Adjust neural network graph font so that bottom is not chopped off

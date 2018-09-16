@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e273a3c-e9f9-469b-8fa0-3d4a12879366" name="Default" comment="" />
+    <list default="true" id="3e273a3c-e9f9-469b-8fa0-3d4a12879366" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_data/neural_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/car_data/neural_network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/data/neural_network/classification_of_acceptable.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/data/neural_network/classification_of_cars.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/data/neural_network/classification_of_good_cars.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/data/neural_network/classification_of_unacceptable.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/data/neural_network/classification_of_very_good_cars.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/classification_of_acceptable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/classification_of_cars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/classification_of_good_cars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/classification_of_unacceptable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/classification_of_very_good_cars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,41 +25,119 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/supervised_learning$decision_tree.coverage" NAME="decision_tree Coverage Results" MODIFIED="1537042766737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car_data" />
+    <SUITE FILE_PATH="coverage/supervised_learning$decision_tree.coverage" NAME="decision_tree Coverage Results" MODIFIED="1537064723355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car_data" />
+    <SUITE FILE_PATH="coverage/supervised_learning$neural_network.coverage" NAME="neural_network Coverage Results" MODIFIED="1537067100438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car_data" />
+    <SUITE FILE_PATH="coverage/supervised_learning$knn.coverage" NAME="knn Coverage Results" MODIFIED="1537110134062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car_data" />
+    <SUITE FILE_PATH="coverage/supervised_learning$support_vector_machine.coverage" NAME="support_vector_machine Coverage Results" MODIFIED="1537108125999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car_data" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="notes.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notes.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="99" lean-forward="true" selection-start-line="19" selection-end-line="19" selection-end-column="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="decision_tree.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/car_data/decision_tree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cars_tree.dot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car_data/cars_tree.dot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="26" column="10" selection-end-line="167" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.4567757">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="notes.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/notes.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="176">
+                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="neural_network.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/car_data/neural_network.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1168">
+                  <caret line="85" selection-start-line="85" selection-end-line="85" />
+                  <folding>
+                    <element signature="e#0#48#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="boosted_classification_of_acceptable_cars.csv" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/data/boosted_tree/boosted_classification_of_acceptable_cars.csv">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="64">
+                  <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="boosted_classification_of_acceptable_cars.png" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/boosted_tree/boosted_classification_of_acceptable_cars.png">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file leaf-file-name="boosted_classification_of_very_good_cars.png" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/boosted_tree/boosted_classification_of_very_good_cars.png">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file leaf-file-name="decision_tree.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/car_data/decision_tree.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="720">
+                  <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="cars_data.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/car_data/cars_data.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="16">
+                  <caret line="4" selection-start-line="4" selection-end-line="4" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sklearn.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/xgboost/sklearn.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="7696">
+                  <caret line="491" selection-start-line="491" selection-end-line="491" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="support_vector_machine.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/car_data/support_vector_machine.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="18" column="128" selection-start-line="18" selection-start-column="128" selection-end-line="18" selection-end-column="128" />
+                  <folding>
+                    <element signature="e#0#23#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="knn.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/car_data/knn.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="48">
+                  <caret line="18" column="108" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
+                  <folding>
+                    <element signature="e#0#23#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,13 +146,27 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>depth</find>
+      <find>ep</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/car.data.csv" />
         <option value="$PROJECT_DIR$/car_data/car.data.csv" />
-        <option value="$PROJECT_DIR$/notes.txt" />
+        <option value="$PROJECT_DIR$/car_data/cars_data.py" />
         <option value="$PROJECT_DIR$/car_data/decision_tree.py" />
+        <option value="$PROJECT_DIR$/car_data/report_artifacts/support_vector_machine.py" />
+        <option value="$PROJECT_DIR$/notes.txt" />
+        <option value="$PROJECT_DIR$/car_data/neural_network.py" />
+        <option value="$PROJECT_DIR$/car_data/support_vector_machine.py" />
+        <option value="$PROJECT_DIR$/car_data/knn.py" />
       </list>
     </option>
   </component>
@@ -78,11 +185,15 @@
     <option name="width" value="978" />
     <option name="height" value="840" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,7 +210,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -111,6 +221,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\danie\Desktop\School\2018_fall\machine_learning\supervised_learning\car_data" />
+      <recent name="C:\Users\danie\Desktop\School\2018_fall\machine_learning\supervised_learning\car_data\report_artifacts\data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -125,7 +236,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.knn">
     <configuration name="decision_tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="supervised_learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,8 +256,73 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="knn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="supervised_learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/car_data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/car_data/knn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="neural_network" type="PythonConfigurationType" factoryName="Python">
+      <module name="supervised_learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/car_data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/car_data/neural_network.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="support_vector_machine" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="supervised_learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/car_data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/car_data/support_vector_machine.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.neural_network" />
+      <item itemvalue="Python.decision_tree" />
+      <item itemvalue="Python.support_vector_machine" />
+      <item itemvalue="Python.knn" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.knn" />
+        <item itemvalue="Python.support_vector_machine" />
         <item itemvalue="Python.decision_tree" />
       </list>
     </recent_temporary>
@@ -162,36 +338,57 @@
       <option name="presentableId" value="Default" />
       <updated>1536973381530</updated>
     </task>
+    <task id="LOCAL-00001" summary="boosting and neural networks implemented for car experiment.">
+      <created>1537066743094</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537066743094</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added more descriptive name to experiment.">
+      <created>1537066894098</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537066894098</updated>
+    </task>
+    <task id="LOCAL-00003" summary="DRY'd up">
+      <created>1537067178048</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537067178048</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026042" side_tool="true" weight="0.33380085" />
       <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Python Console" order="13" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739584" visible="true" weight="0.3330078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739584" visible="true" weight="0.38378906" />
       <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.124200426" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
       <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tail" order="15" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="5" visible="true" weight="0.22707888" />
+      <window_info active="true" anchor="right" id="SciView" order="5" visible="true" weight="0.3491471" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39746094" />
       <window_info anchor="bottom" id="Salesforce" order="7" />
       <window_info anchor="bottom" id="Debug Logs" order="4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="right" id="Data View" order="4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Execute Anonymous" order="5" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" visible="true" weight="0.32983795" />
@@ -203,8 +400,26 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="boosting and neural networks implemented for car experiment." />
+    <MESSAGE value="Added more descriptive name to experiment." />
+    <MESSAGE value="DRY'd up" />
+    <option name="LAST_COMMIT_MESSAGE" value="DRY'd up" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/car_data/neural_network.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/car_data/knn.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -212,11 +427,14 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="df_graph.score.min() - (df_graph.score.min() * .01)" language="Python" />
+        <watch expression="&quot;.&quot;.join(map(str, n_network.hidden_layer_sizes))" language="Python" />
+        <watch expression="str(len(n_network.hidden_layer_sizes)) + &quot; (&quot; + &quot;.&quot;.join(map(str, n_network.hidden_layer_sizes)) + &quot;)&quot;" language="Python" />
+        <watch expression="'Results for {}\n Index: {}\n Accuracy: {}\n Fit Time: {}\n Score Time: {}\n Kernel: {}\n Degree: {}\n Gamma: {}'.format(name, index, score, fit_time, score_time, svm.kernel, svm.degree, svm.gamma)" language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -240,53 +458,118 @@
     </expressions>
     <expressions id="watch">
       <expression>
-        <expression-string>df_graph.score.min() - (df_graph.score.min() * .01)</expression-string>
+        <expression-string>'Results for {}\n Index: {}\n Accuracy: {}\n Fit Time: {}\n Score Time: {}\n Kernel: {}\n Degree: {}\n Gamma: {}'.format(name, index, score, fit_time, score_time, svm.kernel, svm.degree, svm.gamma)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>df_graph.score.min() - (df_graph.score.min() * .1)</expression-string>
+        <expression-string>'Results for {}\n Index: {}\n Accuracy: {}\n Fit Time: {}\n Score Time: {}\n ' + \               'Kernel: {}\n Degree: {}\n Gamma: {}'.format(name, index, score, fit_time, score_time, svm.kernel, svm.degree, svm.gamma)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(df_graph.score.min() * .1) - df_graph.score.min()</expression-string>
+        <expression-string>str(len(n_network.hidden_layer_sizes)) + &quot; (&quot; + &quot;.&quot;.join(map(str, n_network.hidden_layer_sizes)) + &quot;)&quot;</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(df_graph.score.min() * .1) = df_graph.score.min()</expression-string>
+        <expression-string>str(len(n_network.hidden_layer_sizes)) + &quot;(&quot; + &quot;.&quot;.join(map(str, n_network.hidden_layer_sizes)) + &quot;)&quot;</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>df_graph.score.min()</expression-string>
+        <expression-string>len(n_network.hidden_layer_sizes) + &quot;(&quot; + &quot;.&quot;.join(map(str, n_network.hidden_layer_sizes)) + &quot;)&quot;</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>df_graph.scores</expression-string>
+        <expression-string>&quot;.&quot;.join(map(str, n_network.hidden_layer_sizes))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>df_graph.scores.min()</expression-string>
+        <expression-string>len(n_network.hidden_layer_sizes)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pd.DataFrame(scores_scaled)</expression-string>
+        <expression-string>n_network.hidden_layer_sizes.len()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pd.concat([df_graph, pd.DataFrame(scores_scaled)], axis=1)</expression-string>
+        <expression-string>n_network.hidden_layer_sizes.len</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>n_network.hidden_layer_sizes.length</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/neural_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1488">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/data/boosted_tree/boosted_classification_of_acceptable_cars.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="55" lean-forward="true" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/boosted_tree/boosted_classification_of_acceptable_cars.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/neural_network_classification_of_cars.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/decision_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1504">
+          <caret line="101" column="29" lean-forward="true" selection-start-line="101" selection-start-column="3" selection-end-line="101" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/cars_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/xgboost/sklearn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7696">
+          <caret line="491" selection-start-line="491" selection-end-line="491" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/boosted_tree/boosted_classification_of_very_good_cars.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/notes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -372,44 +655,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes.txt">
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifactsClassification of Very Good Cars.csv" />
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/classification_of_acceptable_cars.csv" />
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/classification_of_unacceptable_cars.csv" />
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/classification_of_very_good_cars.csv" />
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/classification_of_cars.csv" />
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/classification_of_good_cars.csv" />
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/classification_of_very_good_cars.png" />
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/classification_of_unacceptable_cars.png" />
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/classification_of_good_cars.png" />
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/classification_of_cars.png" />
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/classification_of_acceptable_cars.png" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/xgboost/sklearn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="99" lean-forward="true" selection-start-line="19" selection-end-line="19" selection-end-column="99" />
+        <state relative-caret-position="7696">
+          <caret line="491" selection-start-line="491" selection-end-line="491" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/report_artifactsClassification of Very Good Cars.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/classification_of_acceptable_cars.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/classification_of_unacceptable_cars.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/classification_of_very_good_cars.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="51" lean-forward="true" selection-start-column="51" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/classification_of_cars.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/classification_of_good_cars.csv">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/classification_distro.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/decision_tree.py">
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/data/decision_tree/classification_of_very_good_cars.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/decision_tree/classification_of_very_good_cars.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/cars_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
+        <state relative-caret-position="16">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/cars" />
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/data/boosted_tree/boosted_classification_of_acceptable_cars.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/boosted_tree/boosted_classification_of_acceptable_cars.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/neural_network_classification_of_cars.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/boosted_tree/boosted_classification_of_very_good_cars.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/data/support_vector_machine/support_vector_matrix_very_good_cars.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/decision_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/neural_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1168">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/support_vector_machine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="18" column="128" selection-start-line="18" selection-start-column="128" selection-end-line="18" selection-end-column="128" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/knn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="18" column="108" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>

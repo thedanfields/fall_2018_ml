@@ -80,6 +80,10 @@ def run_neural_network_experiment(name, df_features, series_target, min_number_o
 
 
 def run_experiments(car_data):
+
+    sns.set(style="whitegrid")
+    sns.set(font_scale=.75)
+
     min_number_of_layers = 2
     max_number_of_layers = 5
 
