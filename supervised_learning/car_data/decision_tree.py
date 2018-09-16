@@ -4,6 +4,8 @@ from sklearn.model_selection import train_test_split
 import time
 import matplotlib.pyplot as plt
 import seaborn as sns
+from xgboost import XGBClassifier
+from cars_data import CarData
 
 sns.set(style="whitegrid")
 
@@ -35,6 +37,15 @@ def get_tree_details(name, tree_score, d_tree, fit_time, score_time, print_detai
                           nodes=d_tree.tree_.node_count, fit_time=fit_time, score_time=score_time))
 
 
+def get_boosted_tree_details(name, tree_score, d_tree, fit_time, score_time, print_details=True):
+    if print_details:
+        print 'Results for {}\n Accuracy: {}\n Tree Depth: {}\n Fit Time: {}\n Score Time: {}\n' \
+            .format(name, tree_score, d_tree.max_depth, fit_time, score_time)
+
+    return pd.Series(dict(name=name, score=tree_score, depth=d_tree.max_depth,
+                          fit_time=fit_time, score_time=score_time))
+
+
 def decision_tree_experiment(ex_data, splitter, max_depth, print_details=True, prune_factor=0):
     d_tree = tree.DecisionTreeClassifier(splitter=splitter, max_depth=max_depth)
 
@@ -57,8 +68,29 @@ def decision_tree_experiment(ex_data, splitter, max_depth, print_details=True, p
     return details
 
 
-def run_classification_experiment(name, df_features, series_target, min_tree_depth=1, max_tree_depth=10,
-                                  prune_factor=0):
+def xgboost_tree_experiment(ex_data, max_depth, print_details=True):
+    boost_tree = XGBClassifier(max_depth=max_depth)
+
+    x_train, y_train, x_test, y_test = ex_data['x_train'], ex_data['y_train'], ex_data['x_test'], ex_data['y_test']
+
+    start = time.time()
+    boost_tree.fit(x_train, y_train)
+    end = time.time()
+    fit_time = (end - start)
+
+    start = time.time()
+    score = boost_tree.score(x_test, y_test)
+    end = time.time()
+    score_time = (end - start)
+
+    details = get_boosted_tree_details("Tree w/ depth of {}".format(max_depth),
+                               score, boost_tree, fit_time=fit_time, score_time=score_time, print_details=print_details)
+
+    return details
+
+
+def run_decision_tree_classification_experiment(name, df_features, series_target, min_tree_depth=1, max_tree_depth=10,
+                                                prune_factor=0):
     x_train, x_test, y_train, y_test = get_train_test_split(df_features, series_target)
     data = dict(x_train=x_train, x_test=x_test, y_train=y_train, y_test=y_test)
 
@@ -79,7 +111,7 @@ def run_classification_experiment(name, df_features, series_target, min_tree_dep
     df_random = pd.DataFrame(random_experiment)
 
     df_graph = pd.concat([df_best, df_random])
-    df_graph.to_csv('./report_artifacts/data/' + name.lower().replace(' ', '_') + '.csv', index=False, index_label='depth')
+    df_graph.to_csv('./report_artifacts/data/decision_tree/' + name.lower().replace(' ', '_') + '.csv', index=False, index_label='depth')
 
     ax = sns.barplot(x="depth", y="score", hue="splitter", data=df_graph)
     ax.set_title(name)
@@ -89,68 +121,101 @@ def run_classification_experiment(name, df_features, series_target, min_tree_dep
     plt.ylim(df_graph.score.min() - (df_graph.score.min() * .01), df_graph.score.max())
 
     fig = ax.get_figure()
-    fig.savefig('./report_artifacts/figures/' + name.lower().replace(' ', '_') + '.png')
+    fig.savefig('./report_artifacts/figures/decision_tree/' + name.lower().replace(' ', '_') + '.png')
 
     plt.show()
-    pass
 
 
-def genereate_target_distribution_plot(dataframe):
-    ax = sns.countplot(x='classification',
-                       data=dataframe,
-                       order=dataframe['classification'].value_counts().index)
-    ax.set_title('Distribution of Cars by Classification')
+def run_boosted_tree_classification_experiment(name, df_features, series_target, min_tree_depth=1, max_tree_depth=10):
+    x_train, x_test, y_train, y_test = get_train_test_split(df_features, series_target)
+    data = dict(x_train=x_train, x_test=x_test, y_train=y_train, y_test=y_test)
+
+    depth_range = range(min_tree_depth, max_tree_depth + 1)
+
+    boost_experiment = []
+
+    for depth in depth_range:
+        boost_experiment.append(xgboost_tree_experiment(data, max_depth=depth))
+
+    df_boost = pd.DataFrame(boost_experiment)
+
+    df_boost.to_csv('./report_artifacts/data/boosted_tree/' + name.lower().replace(' ', '_') + '.csv',
+                    index=False, index_label='depth')
+
+    ax = sns.barplot(x="depth", y="score",  data=df_boost)
+    ax.set_title(name)
+    ax.set_ylabel("accuracy")
+    ax.set_xlabel("tree depth")
+
+    plt.ylim(df_boost.score.min() - (df_boost.score.min() * .01), df_boost.score.max())
+
     fig = ax.get_figure()
-    fig.savefig('./report_artifacts/figures/classification_distro.png')
+    fig.savefig('./report_artifacts/figures/boosted_tree/' + name.lower().replace(' ', '_') + '.png')
+
     plt.show()
 
 
-input_file = "car.data.csv"
-df = pd.read_csv(input_file, header=0)
-df_dummies_features = pd.get_dummies(df,
-                                     columns=['buying_price', 'maintenance_cost', 'number_of_doors',
-                                              'carrying_capacity',
-                                              'trunk_size', 'safety_rating'],
-                                     drop_first=True)
+def run_boosted_experiments(car_data):
+    run_boosted_tree_classification_experiment("Boosted Classification of Very Good Cars",
+                                               car_data.features,
+                                               car_data.target_classification_very_good,
+                                               max_tree_depth=10)
 
-df_dummies_classification = pd.get_dummies(pd.DataFrame(df.classification), columns=['classification'])
+    run_boosted_tree_classification_experiment("Boosted Classification of Good Cars",
+                                               car_data.features,
+                                               car_data.target_classification_good,
+                                               max_tree_depth=10)
 
-all_feature_columns = ['buying_price_low',
-                       'buying_price_med',
-                       'buying_price_vhigh',
-                       'maintenance_cost_low',
-                       'maintenance_cost_med',
-                       'maintenance_cost_vhigh',
-                       'number_of_doors_3',
-                       'number_of_doors_4',
-                       'number_of_doors_5more',
-                       'carrying_capacity_4',
-                       'carrying_capacity_more',
-                       'trunk_size_med',
-                       'trunk_size_small',
-                       'safety_rating_low',
-                       'safety_rating_med']
+    run_boosted_tree_classification_experiment("Boosted Classification of Acceptable Cars",
+                                               car_data.features,
+                                               car_data.target_classification_acceptable,
+                                               max_tree_depth=10)
 
-df_features = pd.DataFrame(df_dummies_features, columns=all_feature_columns)
+    run_boosted_tree_classification_experiment("Boosted Classification of Unacceptable Cars",
+                                               car_data.features,
+                                               car_data.target_classification_unacceptable,
+                                               max_tree_depth=10)
 
-genereate_target_distribution_plot(df)
+    run_boosted_tree_classification_experiment("Boosted Classification of Cars",
+                                               car_data.features,
+                                               car_data.target_classification,
+                                               max_tree_depth=13)
 
-prune_to = 10
-max_tree_depth = 15
 
-run_classification_experiment("Classification of Very Good Cars",
-                              df_features, df_dummies_classification.classification_vgood,
-                              prune_factor=prune_to, max_tree_depth=10)
-run_classification_experiment("Classification of Good Cars",
-                              df_features, df_dummies_classification.classification_good,
-                              prune_factor=prune_to, max_tree_depth=12)
-run_classification_experiment("Classification of Acceptable Cars",
-                              df_features, df_dummies_classification.classification_acc,
-                              prune_factor=prune_to, max_tree_depth=10)
-run_classification_experiment("Classification of Unacceptable Cars",
-                              df_features, df_dummies_classification.classification_unacc,
-                              prune_factor=prune_to, max_tree_depth=10)
+def run_decision_tree_experiments(car_data):
+    prune_to = 10
 
-run_classification_experiment("Classification of Cars",
-                              df_features, df.classification.astype("category").cat.codes,
-                              prune_factor=prune_to, max_tree_depth=13)
+    run_decision_tree_classification_experiment("Classification of Very Good Cars",
+                                                car_data.features,
+                                                car_data.target_classification_very_good,
+                                                prune_factor=prune_to, max_tree_depth=10)
+
+    run_decision_tree_classification_experiment("Classification of Good Cars",
+                                                car_data.features,
+                                                car_data.target_classification_good,
+                                                prune_factor=prune_to, max_tree_depth=12)
+
+    run_decision_tree_classification_experiment("Classification of Acceptable Cars",
+                                                car_data.features,
+                                                car_data.target_classification_acceptable,
+                                                prune_factor=prune_to, max_tree_depth=10)
+
+    run_decision_tree_classification_experiment("Classification of Unacceptable Cars",
+                                                car_data.features,
+                                                car_data.target_classification_unacceptable,
+                                                prune_factor=prune_to, max_tree_depth=10)
+
+    run_decision_tree_classification_experiment("Classification of Cars",
+                                                car_data.features,
+                                                car_data.target_classification,
+                                                prune_factor=prune_to, max_tree_depth=13)
+
+car_data = CarData()
+
+#car_data.generate_target_distribution_plot()
+
+#run_decision_tree_experiments(car_data)
+run_boosted_experiments(car_data)
+
+
+

@@ -3,12 +3,10 @@ Dataset 1 -> car evaluation dataset
 desc -> https://archive.ics.uci.edu/ml/datasets/Car+Evaluation
 data -> https://archive.ics.uci.edu/ml/machine-learning-databases/car/
 
+Show tree:
 http://webgraphviz.com/
 
 https://www.analyticsvidhya.com/blog/2016/07/practical-guide-data-preprocessing-python-scikit-learn/
-
-
-** drop first column on dummy data (https://youtu.be/0s_1IsROgDc?t=426)
 
 buying_price,maintenance_cost,number_of_doors,carrying_capacity,trunk_size,safety_rating,classification
 
@@ -16,5 +14,14 @@ Car experiments
 1. accuracy on each classification (vgood, good, acc, unacc)
 2. accuracy on all classifications
 
+Observations:
+* It looks like more depth is needed to become more accurate on smaller sample sizes.
+* Boosting takes a bit more time, but works much better.
+* Neural networks have high scores but are inaccurate
+
 ### Pruning code:
 https://stackoverflow.com/questions/39002230/possible-to-modify-prune-learned-trees-in-scikit-learn
+
+
+** Need to obtain error rates to show overfitting!
+
