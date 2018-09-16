@@ -84,11 +84,11 @@ def run_experiments(car_data):
 
     Experiment = collections.namedtuple('Experiment', 'name target')
 
-    experiments = [Experiment(name="Classification of Very Good Cars", target=car_data.target_classification_very_good),
-                   Experiment(name="Classification of Good Cars", target=car_data.target_classification_good),
-                   Experiment(name="Classification of Acceptable", target=car_data.target_classification_acceptable),
-                   Experiment(name="Classification of UnAcceptable", target=car_data.target_classification_unacceptable),
-                   Experiment(name="Classification of Cars", target=car_data.target_classification)]
+    experiments = [Experiment(name="Neural Network Classification of Very Good Cars", target=car_data.target_classification_very_good),
+                   Experiment(name="Neural Network Classification Classification of Good Cars", target=car_data.target_classification_good),
+                   Experiment(name="Neural Network Classification Classification of Acceptable", target=car_data.target_classification_acceptable),
+                   Experiment(name="Neural Network Classification Classification of UnAcceptable", target=car_data.target_classification_unacceptable),
+                   Experiment(name="Neural Network Classification Classification of Cars", target=car_data.target_classification)]
 
     for e in experiments:
         run_neural_network_experiment(e.name, car_data.features, e.target, min_number_of_layers, max_number_of_layers)
