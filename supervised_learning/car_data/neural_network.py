@@ -7,6 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import collections
 
+
 def get_train_test_split(df_features, df_target):
     return train_test_split(df_features, df_target, test_size=0.33, random_state=42)
 
@@ -68,7 +69,7 @@ def run_neural_network_experiment(name, df_features, series_target, min_number_o
     ax = sns.barplot(x="index", y="score", data=df_experiments)
     ax.set_title(name)
     ax.set_ylabel("accuracy")
-    ax.set_xlabel("layer")
+    ax.set_xlabel("layer size / structure")
 
     plt.ylim(df_experiments.score.min() - (df_experiments.score.min() * .01), df_experiments.score.max())
 
@@ -84,20 +85,16 @@ def run_experiments(car_data):
 
     Experiment = collections.namedtuple('Experiment', 'name target')
 
-    experiments = [Experiment(name="Neural Network Classification of Very Good Cars", target=car_data.target_classification_very_good),
-                   Experiment(name="Neural Network Classification Classification of Good Cars", target=car_data.target_classification_good),
-                   Experiment(name="Neural Network Classification Classification of Acceptable", target=car_data.target_classification_acceptable),
-                   Experiment(name="Neural Network Classification Classification of UnAcceptable", target=car_data.target_classification_unacceptable),
-                   Experiment(name="Neural Network Classification Classification of Cars", target=car_data.target_classification)]
+    experiments = [Experiment(name="Very Good Cars", target=car_data.target_classification_very_good),
+                   Experiment(name="Good Cars", target=car_data.target_classification_good),
+                   Experiment(name="Acceptable Cars", target=car_data.target_classification_acceptable),
+                   Experiment(name="UnAcceptable Cars", target=car_data.target_classification_unacceptable),
+                   Experiment(name="of Cars", target=car_data.target_classification)]
 
+    learner = "Neural Network Classification"
     for e in experiments:
-        run_neural_network_experiment(e.name, car_data.features, e.target, min_number_of_layers, max_number_of_layers)
+        run_neural_network_experiment("{} {}".format(learner, e.name), car_data.features, e.target, min_number_of_layers, max_number_of_layers)
 
-    # run_neural_network_experiment("Classification of Very Good Cars",
-    #                               car_data.features,
-    #                               car_data.target_classification_very_good,
-    #                               min_number_of_layers, max_number_of_layers)
 
 car_data = CarData()
-
 run_experiments(car_data)
