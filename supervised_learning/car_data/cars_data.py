@@ -1,6 +1,6 @@
 import pandas as pd
-from pandas import DataFrame
 import seaborn as sns
+from pandas import DataFrame
 from pandas.io.parsers import TextFileReader
 
 
@@ -10,7 +10,7 @@ class CarData:
     features = None  # type: DataFrame
 
     def __init__(self):
-        input_file = "car.data.csv"
+        input_file = "./car_data/car.data.csv"
         self.df_raw = pd.read_csv(input_file, header=0)
         df_dummies_features = pd.get_dummies(self.df_raw,
                                              columns=['buying_price', 'maintenance_cost', 'number_of_doors',
@@ -48,7 +48,7 @@ class CarData:
         ax = sns.countplot(x='classification',
                            data=self.df_raw,
                            order=self.df_raw['classification'].value_counts().index)
-        ax.set_title('Distribution of Cars by Classification')
+        ax.set_title('Distribution of Wages by Classification')
         fig = ax.get_figure()
         fig.savefig('./report_artifacts/figures/classification_distro.png')
         #plt.show()

@@ -3,6 +3,12 @@ Dataset 1 -> car evaluation dataset
 desc -> https://archive.ics.uci.edu/ml/datasets/Car+Evaluation
 data -> https://archive.ics.uci.edu/ml/machine-learning-databases/car/
 
+
+Datset 2 -> Determine if a person makes 50k or more per year
+
+desc -> https://archive.ics.uci.edu/ml/datasets/Adult
+data ->
+
 Show tree:
 http://webgraphviz.com/
 

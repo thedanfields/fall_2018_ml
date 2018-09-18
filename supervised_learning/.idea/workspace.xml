@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e273a3c-e9f9-469b-8fa0-3d4a12879366" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_data/neural_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/car_data/neural_network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/data/neural_network/classification_of_acceptable.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/data/neural_network/classification_of_cars.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/data/neural_network/classification_of_good_cars.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/data/neural_network/classification_of_unacceptable.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/data/neural_network/classification_of_very_good_cars.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/classification_of_acceptable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/classification_of_cars.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/classification_of_good_cars.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/classification_of_unacceptable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/classification_of_very_good_cars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_data/cars_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/car_data/cars_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,20 +14,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/supervised_learning$decision_tree__1_.coverage" NAME="decision_tree (1) Coverage Results" MODIFIED="1537231483015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/supervised_learning$run_experiments.coverage" NAME="run_experiments Coverage Results" MODIFIED="1537240265231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/supervised_learning$decision_tree.coverage" NAME="decision_tree Coverage Results" MODIFIED="1537064723355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car_data" />
     <SUITE FILE_PATH="coverage/supervised_learning$neural_network.coverage" NAME="neural_network Coverage Results" MODIFIED="1537067100438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car_data" />
     <SUITE FILE_PATH="coverage/supervised_learning$knn.coverage" NAME="knn Coverage Results" MODIFIED="1537110134062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car_data" />
     <SUITE FILE_PATH="coverage/supervised_learning$support_vector_machine.coverage" NAME="support_vector_machine Coverage Results" MODIFIED="1537108125999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/car_data" />
+    <SUITE FILE_PATH="coverage/supervised_learning$decision_tree__2_.coverage" NAME="decision_tree (2) Coverage Results" MODIFIED="1537236561654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learners" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.4567757">
+    <splitter split-orientation="vertical" split-proportion="0.5673534">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="notes.txt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/notes.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+                <state relative-caret-position="126">
+                  <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -46,8 +38,8 @@
           <file leaf-file-name="neural_network.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/car_data/neural_network.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1168">
-                  <caret line="85" selection-start-line="85" selection-end-line="85" />
+                <state relative-caret-position="15">
+                  <caret line="54" column="32" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="32" />
                   <folding>
                     <element signature="e#0#48#0" expanded="true" />
                   </folding>
@@ -55,11 +47,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="boosted_classification_of_acceptable_cars.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/data/boosted_tree/boosted_classification_of_acceptable_cars.csv">
+          <file leaf-file-name="knn.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/car_data/knn.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="64">
-                  <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+                <state relative-caret-position="136">
+                  <caret line="93" column="102" lean-forward="true" selection-start-line="90" selection-start-column="3" selection-end-line="93" selection-end-column="102" />
                 </state>
               </provider>
             </entry>
@@ -74,11 +66,23 @@
               <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
+          <file leaf-file-name="adult_data.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/adult_data/adult_data.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="422">
+                  <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="decision_tree.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/car_data/decision_tree.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
-                  <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+                <state relative-caret-position="-612">
+                  <caret line="113" column="60" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="60" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                   </folding>
@@ -89,8 +93,8 @@
           <file leaf-file-name="cars_data.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/car_data/cars_data.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="16">
-                  <caret line="4" selection-start-line="4" selection-end-line="4" />
+                <state relative-caret-position="48">
+                  <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                   </folding>
@@ -98,20 +102,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="sklearn.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/xgboost/sklearn.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7696">
-                  <caret line="491" selection-start-line="491" selection-end-line="491" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="support_vector_machine.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/car_data/support_vector_machine.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="18" column="128" selection-start-line="18" selection-start-column="128" selection-end-line="18" selection-end-column="128" />
+                <state relative-caret-position="373">
+                  <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
                   <folding>
                     <element signature="e#0#23#0" expanded="true" />
                   </folding>
@@ -123,13 +118,70 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="knn.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/car_data/knn.py">
+          <file leaf-file-name="decision_tree.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/learners/decision_tree.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="48">
-                  <caret line="18" column="108" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
+                  <caret line="9" selection-start-line="9" selection-end-line="13" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="knn.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/learners/knn.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="128">
+                  <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#0#29#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="neural_network.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/learners/neural_network.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="64">
+                  <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="13" />
+                  <folding>
+                    <element signature="e#0#48#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="support_vector_machine.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/learners/support_vector_machine.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="99">
+                  <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
                   <folding>
                     <element signature="e#0#23#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="run_experiments.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/run_experiments.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="99">
+                  <caret line="238" column="94" lean-forward="true" selection-start-line="235" selection-start-column="2" selection-end-line="238" selection-end-column="94" />
+                  <folding>
+                    <element signature="e#0#38#0" expanded="true" />
+                    <element signature="e#344#1080#0" />
+                    <element signature="e#1387#1921#0" />
+                    <element signature="e#1380#2009#0" />
+                    <element signature="e#2696#3403#0" />
+                    <element signature="e#3316#3842#0" />
+                    <element signature="e#4144#4917#0" />
+                    <element signature="e#4837#5478#0" />
+                    <element signature="e#6852#7712#0" />
+                    <element signature="e#7767#8627#0" />
+                    <element signature="e#1457#2030#0" />
+                    <element signature="e#2804#3360#0" />
+                    <element signature="e#7284#7627#0" />
                   </folding>
                 </state>
               </provider>
@@ -150,6 +202,10 @@
     <findStrings>
       <find>depth</find>
       <find>ep</find>
+      <find>artifact</find>
+      <find>svm</find>
+      <find>figure</find>
+      <find>car_data</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,13 +216,23 @@
       <list>
         <option value="$PROJECT_DIR$/car.data.csv" />
         <option value="$PROJECT_DIR$/car_data/car.data.csv" />
-        <option value="$PROJECT_DIR$/car_data/cars_data.py" />
         <option value="$PROJECT_DIR$/car_data/decision_tree.py" />
         <option value="$PROJECT_DIR$/car_data/report_artifacts/support_vector_machine.py" />
-        <option value="$PROJECT_DIR$/notes.txt" />
-        <option value="$PROJECT_DIR$/car_data/neural_network.py" />
-        <option value="$PROJECT_DIR$/car_data/support_vector_machine.py" />
         <option value="$PROJECT_DIR$/car_data/knn.py" />
+        <option value="$PROJECT_DIR$/notes.txt" />
+        <option value="$PROJECT_DIR$/adult_data/adult.data.csv" />
+        <option value="$PROJECT_DIR$/decision_tree.py" />
+        <option value="$PROJECT_DIR$/learners/__init__.py" />
+        <option value="$PROJECT_DIR$/car_data/__init__.py" />
+        <option value="$PROJECT_DIR$/car_data/cars_data.py" />
+        <option value="$PROJECT_DIR$/learners/decision_tree.py" />
+        <option value="$PROJECT_DIR$/adult_data/adult_data.py" />
+        <option value="$PROJECT_DIR$/learners/knn.py" />
+        <option value="$PROJECT_DIR$/car_data/neural_network.py" />
+        <option value="$PROJECT_DIR$/learners/neural_network.py" />
+        <option value="$PROJECT_DIR$/learners/support_vector_machine.py" />
+        <option value="$PROJECT_DIR$/car_data/support_vector_machine.py" />
+        <option value="$PROJECT_DIR$/run_experiments.py" />
       </list>
     </option>
   </component>
@@ -204,7 +270,62 @@
             <path>
               <item name="supervised_learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="supervised_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="adult_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supervised_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supervised_learning" type="462c0819:PsiDirectoryNode" />
               <item name="car_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supervised_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supervised_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="learners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supervised_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supervised_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="report_artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supervised_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supervised_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="report_artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="car_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supervised_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supervised_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="report_artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="car_data" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supervised_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supervised_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="report_artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="car_data" type="462c0819:PsiDirectoryNode" />
+              <item name="figures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supervised_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supervised_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="report_artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="wage_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supervised_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supervised_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="report_artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="wage_data" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="supervised_learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supervised_learning" type="462c0819:PsiDirectoryNode" />
+              <item name="report_artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="wage_data" type="462c0819:PsiDirectoryNode" />
+              <item name="figures" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -236,8 +357,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.knn">
-    <configuration name="decision_tree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.run_experiments">
+    <configuration name="decision_tree (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="supervised_learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -245,12 +366,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/car_data" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/car_data/decision_tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/decision_tree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="decision_tree (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="supervised_learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learners" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learners/decision_tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -294,6 +434,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="run_experiments" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="supervised_learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_experiments.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="support_vector_machine" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="supervised_learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -315,15 +474,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.neural_network" />
-      <item itemvalue="Python.decision_tree" />
       <item itemvalue="Python.support_vector_machine" />
       <item itemvalue="Python.knn" />
+      <item itemvalue="Python.decision_tree (1)" />
+      <item itemvalue="Python.run_experiments" />
+      <item itemvalue="Python.decision_tree (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_experiments" />
+        <item itemvalue="Python.decision_tree (2)" />
+        <item itemvalue="Python.decision_tree (1)" />
         <item itemvalue="Python.knn" />
         <item itemvalue="Python.support_vector_machine" />
-        <item itemvalue="Python.decision_tree" />
       </list>
     </recent_temporary>
   </component>
@@ -359,11 +522,19 @@
       <option name="project" value="LOCAL" />
       <updated>1537067178048</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="SVM &amp; Knn for car dataset">
+      <created>1537110291599</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537110291599</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026042" side_tool="true" weight="0.33380085" />
@@ -372,11 +543,11 @@
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739584" visible="true" weight="0.38378906" />
       <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
       <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tail" order="15" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info active="true" anchor="right" id="SciView" order="5" visible="true" weight="0.3491471" />
+      <window_info anchor="right" id="SciView" order="5" visible="true" weight="0.31343284" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39746094" />
@@ -404,7 +575,8 @@
     <MESSAGE value="boosting and neural networks implemented for car experiment." />
     <MESSAGE value="Added more descriptive name to experiment." />
     <MESSAGE value="DRY'd up" />
-    <option name="LAST_COMMIT_MESSAGE" value="DRY'd up" />
+    <MESSAGE value="SVM &amp; Knn for car dataset" />
+    <option name="LAST_COMMIT_MESSAGE" value="SVM &amp; Knn for car dataset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -419,6 +591,16 @@
           <line>15</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/learners/decision_tree.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/learners/neural_network.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -427,14 +609,14 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="38" />
+      <option name="time" value="51" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="df_graph.score.min() - (df_graph.score.min() * .01)" language="Python" />
-        <watch expression="&quot;.&quot;.join(map(str, n_network.hidden_layer_sizes))" language="Python" />
-        <watch expression="str(len(n_network.hidden_layer_sizes)) + &quot; (&quot; + &quot;.&quot;.join(map(str, n_network.hidden_layer_sizes)) + &quot;)&quot;" language="Python" />
-        <watch expression="'Results for {}\n Index: {}\n Accuracy: {}\n Fit Time: {}\n Score Time: {}\n Kernel: {}\n Degree: {}\n Gamma: {}'.format(name, index, score, fit_time, score_time, svm.kernel, svm.degree, svm.gamma)" language="Python" />
+        <watch expression="df_dummies_classification['classification_ 50_k_or_less']" language="Python" />
+        <watch expression="self.target_classification" language="Python" />
+        <watch expression="list(df_dummies_features)" language="Python" />
+        <watch expression="df_features.count(axis=1)[0]" language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -458,142 +640,53 @@
     </expressions>
     <expressions id="watch">
       <expression>
+        <expression-string>df_features.count(axis=1)[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>df_features.features.count(axis=1)[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list(df_dummies_features)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.target_classification</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>df_dummies_classification['classification_ 50_k_or_less']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>df_dummies_classification.classification_ 50_k_or_less</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>df_dummies_classification</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>df_dummies_classification.classification_50_k_or_less</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>'Results for {}\n Index: {}\n Accuracy: {}\n Fit Time: {}\n Score Time: {}\n Kernel: {}\n Degree: {}\n Gamma: {}'.format(name, index, score, fit_time, score_time, svm.kernel, svm.degree, svm.gamma)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>'Results for {}\n Index: {}\n Accuracy: {}\n Fit Time: {}\n Score Time: {}\n ' + \               'Kernel: {}\n Degree: {}\n Gamma: {}'.format(name, index, score, fit_time, score_time, svm.kernel, svm.degree, svm.gamma)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(len(n_network.hidden_layer_sizes)) + &quot; (&quot; + &quot;.&quot;.join(map(str, n_network.hidden_layer_sizes)) + &quot;)&quot;</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(len(n_network.hidden_layer_sizes)) + &quot;(&quot; + &quot;.&quot;.join(map(str, n_network.hidden_layer_sizes)) + &quot;)&quot;</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>len(n_network.hidden_layer_sizes) + &quot;(&quot; + &quot;.&quot;.join(map(str, n_network.hidden_layer_sizes)) + &quot;)&quot;</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>&quot;.&quot;.join(map(str, n_network.hidden_layer_sizes))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>len(n_network.hidden_layer_sizes)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>n_network.hidden_layer_sizes.len()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>n_network.hidden_layer_sizes.len</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>n_network.hidden_layer_sizes.length</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/notes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/neural_network.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1488">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/data/boosted_tree/boosted_classification_of_acceptable_cars.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="55" lean-forward="true" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/boosted_tree/boosted_classification_of_acceptable_cars.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/neural_network/neural_network_classification_of_cars.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/decision_tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1504">
-          <caret line="101" column="29" lean-forward="true" selection-start-line="101" selection-start-column="3" selection-end-line="101" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/cars_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/xgboost/sklearn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7696">
-          <caret line="491" selection-start-line="491" selection-end-line="491" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/boosted_tree/boosted_classification_of_very_good_cars.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/car.data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="112" selection-start-column="112" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/decision_tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/car_data/cars_tree.dot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -641,13 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/car.data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="329" column="27" lean-forward="true" selection-start-line="329" selection-start-column="27" selection-end-line="329" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/car_data/cars_tree.dot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -682,16 +768,6 @@
     <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/decision_tree/classification_of_very_good_cars.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/cars_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/car_data/cars" />
     <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/data/boosted_tree/boosted_classification_of_acceptable_cars.csv">
       <provider selected="true" editor-type-id="text-editor">
@@ -709,52 +785,167 @@
     <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/figures/boosted_tree/boosted_classification_of_very_good_cars.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/car_data/report_artifacts/data/support_vector_machine/support_vector_matrix_very_good_cars.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/decision_tree.py">
+    <entry file="file://$PROJECT_DIR$/adult_data/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/car.data.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="5264">
+          <caret line="329" column="27" selection-start-line="329" selection-start-column="27" selection-end-line="329" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decision_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="40" selection-end-line="227" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/cars_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/neural_network.py">
+    <entry file="file://$PROJECT_DIR$/report_artifacts/car_data/figures/decision_tree/decision_tree_classification_of__acceptable_cars.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/decision_tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1168">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="-612">
+          <caret line="113" column="60" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="60" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car_data/support_vector_machine.py">
+    <entry file="file://$PROJECT_DIR$/adult_data/adult.data.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="18" column="128" selection-start-line="18" selection-start-column="128" selection-end-line="18" selection-end-column="128" />
+        <state relative-caret-position="48">
+          <caret line="3" column="113" lean-forward="true" selection-start-line="3" selection-start-column="113" selection-end-line="3" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learners/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adult_data/report_artifacts/figures/classification_distro.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adult_data/adult_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learners/decision_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="9" selection-start-line="9" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report_artifacts/car_data/data/knn/k-nn_classification_of__acceptable_cars.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learners/knn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/car_data/knn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="18" column="108" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
+        <state relative-caret-position="136">
+          <caret line="93" column="102" lean-forward="true" selection-start-line="90" selection-start-column="3" selection-end-line="93" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learners/neural_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/neural_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="54" column="32" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learners/support_vector_machine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_data/support_vector_machine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_experiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="238" column="94" lean-forward="true" selection-start-line="235" selection-start-column="2" selection-end-line="238" selection-end-column="94" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#344#1080#0" />
+            <element signature="e#1387#1921#0" />
+            <element signature="e#1380#2009#0" />
+            <element signature="e#2696#3403#0" />
+            <element signature="e#3316#3842#0" />
+            <element signature="e#4144#4917#0" />
+            <element signature="e#4837#5478#0" />
+            <element signature="e#6852#7712#0" />
+            <element signature="e#7767#8627#0" />
+            <element signature="e#1457#2030#0" />
+            <element signature="e#2804#3360#0" />
+            <element signature="e#7284#7627#0" />
           </folding>
         </state>
       </provider>
