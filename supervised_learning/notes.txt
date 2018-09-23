@@ -16,6 +16,11 @@ https://www.analyticsvidhya.com/blog/2016/07/practical-guide-data-preprocessing-
 
 buying_price,maintenance_cost,number_of_doors,carrying_capacity,trunk_size,safety_rating,classification
 
+
+## plotting learning / validation curves:
+
+https://datascience.stackexchange.com/questions/29520/how-to-plot-learning-curve-and-validation-curve-while-using-pipeline
+
 Car experiments
 1. accuracy on each classification (vgood, good, acc, unacc)
 2. accuracy on all classifications
@@ -31,3 +36,6 @@ https://stackoverflow.com/questions/39002230/possible-to-modify-prune-learned-tr
 TODO:
 ** Need to obtain error rates to show overfitting!
 ** Adjust neural network graph font so that bottom is not chopped off
+
+** possible way: https://www.kaggle.com/garnetreds7/xgbclassifier
+

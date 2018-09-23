@@ -87,12 +87,14 @@ def generate_knn_experiments_for_car_data(data):
 
 def generate_knn_experiments_for_wage_data(data):
     min_k = 1
-    max_k = 10
+    max_k = 50
 
-    return [KnnExperiment(name="Wages 50k or less", target=data.target_classification_50_k_or_less,
-                          min_k=min_k, max_k=max_k),
-            KnnExperiment(name="Wages greater than 50k", target=data.target_classification_more_than_50_k,
-                          min_k=min_k, max_k=max_k),
+    return [
+
+            # KnnExperiment(name="Wages 50k or less", target=data.target_classification_50_k_or_less,
+            #               min_k=min_k, max_k=max_k),
+            # KnnExperiment(name="Wages greater than 50k", target=data.target_classification_more_than_50_k,
+            #               min_k=min_k, max_k=max_k),
             KnnExperiment(name="Wages", target=data.target_classification,
                           min_k=min_k, max_k=max_k)
             ]
@@ -146,12 +148,10 @@ def generate_svm_experiments_for_car_data(data):
 
 def generate_svm_experiments_for_wage_data(data):
     min_degree = 3
-    max_degree = 4
+    max_degree = 3
 
-    return [SVMExperiment(name="Wages 50k or less", target=data.target_classification_50_k_or_less,
-                          min_degree=min_degree, max_degree=max_degree),
-            SVMExperiment(name="Wages greater than 50k", target=data.target_classification_more_than_50_k,
-                          min_degree=min_degree, max_degree=max_degree),
+    return [
+
             SVMExperiment(name="Wages", target=data.target_classification,
                           min_degree=min_degree, max_degree=max_degree)
             ]
@@ -182,6 +182,8 @@ def run_boosted_tree_experiments(data_folder, features, experiments):
 
 
 def run_knn_experiments(data_folder, features, experiments):
+    sns.set(font_scale=.60)
+
     experiment_title = "K-NN classification of"
 
     learner = KnnLearner('./report_artifacts/' + data_folder + '/figures/knn/',
@@ -190,6 +192,7 @@ def run_knn_experiments(data_folder, features, experiments):
     for e in experiments:
         learner.run_knn_experiment("{} {}".format(experiment_title, e.name), features, e.target, e.min_k, e.max_k)
 
+    sns.set(font_scale=1.0)
 
 def run_neural_network_experiments(data_folder, features, experiments):
     sns.set(font_scale=.75)
@@ -226,14 +229,14 @@ car_data_folder = 'car_data'
 wage_data_folder = 'wage_data'
 
 # run_decision_tree_experiments(car_data_folder, car_data.features, generate_decision_tree_experiments_for_car_data(car_data))
-# run_boosted_tree_experiments(car_data_folder, car_data.features, generate_boosted_tree_experiments_for_car_data(car_data))
+#run_boosted_tree_experiments(car_data_folder, car_data.features, generate_boosted_tree_experiments_for_car_data(car_data))
 
 # run_decision_tree_experiments(wage_data_folder, wage_data.features, generate_decision_tree_experiments_for_wage_data(wage_data))
-# run_boosted_tree_experiments(wage_data_folder, wage_data.features,
-#                              generate_boosted_tree_experiments_for_wage_data(wage_data))
+#run_boosted_tree_experiments(wage_data_folder, wage_data.features,
+  #                            generate_boosted_tree_experiments_for_wage_data(wage_data))
 
 # run_knn_experiments(car_data_folder, car_data.features, generate_knn_experiments_for_car_data(car_data))
-# run_knn_experiments(wage_data_folder, wage_data.features, generate_knn_experiments_for_wage_data(wage_data))
+#run_knn_experiments(wage_data_folder, wage_data.features, generate_knn_experiments_for_wage_data(wage_data))
 
 # run_neural_network_experiments(car_data_folder, car_data.features,
 #                                generate_neural_network_experiments_for_car_data(car_data))
@@ -243,5 +246,5 @@ wage_data_folder = 'wage_data'
 #run_svm_experiments(car_data_folder, car_data.features, generate_svm_experiments_for_car_data(car_data))
 run_svm_experiments(wage_data_folder, wage_data.features, generate_svm_experiments_for_wage_data(wage_data))
 
-# car_data.generate_target_distribution_plot()
-# adult_data.generate_target_distribution_plot()
+#car_data.generate_target_distribution_plot()
+#wage_data.generate_target_distribution_plot()

@@ -51,7 +51,6 @@ class NeuralNetworkLearner:
 
         return details
 
-
     def run_neural_network_experiment(self, name, df_features, series_target, min_number_of_layers, max_number_of_layers):
         x_train, x_test, y_train, y_test = self.get_train_test_split(df_features, series_target)
         data = dict(x_train=x_train, x_test=x_test, y_train=y_train, y_test=y_test)

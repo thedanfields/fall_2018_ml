@@ -64,9 +64,9 @@ class AdultData:
         ax = sns.countplot(x='classification',
                            data=self.df_raw,
                            order=self.df_raw['classification'].value_counts().index)
-        ax.set_title('Distribution of Cars by Classification')
+        ax.set_title('Distribution of Wages by Classification')
         fig = ax.get_figure()
-        fig.savefig('./adult_data/report_artifacts/figures/classification_distro.png')
+        fig.savefig('./report_artifacts/wage_data/figures/classification_distro.png')
         # plt.show()
 
     @staticmethod

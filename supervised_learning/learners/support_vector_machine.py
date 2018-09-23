@@ -59,10 +59,10 @@ class SVMLeaner:
         degree_range = range(min_degree, max_degree + 1)
 
         for degree in degree_range:
-            linear_experiments.append(self.svm_experiment(data, degree, kernel='linear'))
-            polynomial_experiments.append(self.svm_experiment(data, degree, kernel='poly', gamma=.66))
+            #linear_experiments.append(self.svm_experiment(data, degree, kernel='linear'))
+            #polynomial_experiments.append(self.svm_experiment(data, degree, kernel='poly', gamma=.66))
             rbf_experiments.append(self.svm_experiment(data, degree, kernel='rbf', gamma=.66))
-            sigmoid_experiments.append(self.svm_experiment(data, degree, kernel='sigmoid'))
+            #sigmoid_experiments.append(self.svm_experiment(data, degree, kernel='sigmoid'))
 
         df_linear = pd.DataFrame(linear_experiments)
         df_polynomial = pd.DataFrame(polynomial_experiments)
