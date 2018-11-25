@@ -1,0 +1,2 @@
+degree,fit_time,gamma,index,kernel,name,score,score_time
+3,395.58200001716614,0.66,rbf (3),rbf,SVM,0.7627954587753583,42.605000019073486

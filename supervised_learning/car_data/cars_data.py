@@ -44,6 +44,8 @@ class CarData:
 
         self.features = pd.DataFrame(df_dummies_features, columns=all_feature_columns)
 
+
+
     def generate_target_distribution_plot(self):
         ax = sns.countplot(x='classification',
                            data=self.df_raw,
@@ -52,3 +54,19 @@ class CarData:
         fig = ax.get_figure()
         fig.savefig('./report_artifacts/car_data/figures/classification_distro.png')
         #plt.show()
+
+    def generate_csv(self):
+        encoded_data_all = self.features.assign(classification=self.target_classification.values)
+        encoded_data_all.to_csv('./report_artifacts/car_data/encoded_data_all.csv', index=False)
+
+        encoded_data_unacceptable = self.features.assign(classification=self.target_classification_unacceptable.values)
+        encoded_data_unacceptable.to_csv('./report_artifacts/car_data/encoded_data_unacceptable.csv', index=False)
+
+        encoded_data_acceptable = self.features.assign(classification=self.target_classification_acceptable.values)
+        encoded_data_acceptable.to_csv('./report_artifacts/car_data/encoded_data_acceptable.csv', index=False)
+
+        encoded_data_good  = self.features.assign(classification=self.target_classification_good.values)
+        encoded_data_good.to_csv('./report_artifacts/car_data/encoded_data_good.csv', index=False)
+
+        encoded_data_vgood = self.features.assign(classification=self.target_classification_very_good.values)
+        encoded_data_vgood.to_csv('./report_artifacts/car_data/encoded_data_very_good.csv', index=False)

@@ -101,17 +101,18 @@ def generate_knn_experiments_for_wage_data(data):
 
 
 def generate_neural_network_experiments_for_car_data(data):
-    min_number_of_layers = 2
-    max_number_of_layers = 5
+    min_number_of_layers = 3
+    max_number_of_layers = 3
 
-    return [NeuralNetworkExperiment(name="Very Good Cars", target=data.target_classification_very_good,
-                                    min_layers=min_number_of_layers, max_layers=max_number_of_layers),
-            NeuralNetworkExperiment(name="Good Cars", target=data.target_classification_good,
-                                    min_layers=min_number_of_layers, max_layers=max_number_of_layers),
-            NeuralNetworkExperiment(name="Acceptable Cars", target=data.target_classification_acceptable,
-                                    min_layers=min_number_of_layers, max_layers=max_number_of_layers),
-            NeuralNetworkExperiment(name="UnAcceptable Cars", target=data.target_classification_unacceptable,
-                                    min_layers=min_number_of_layers, max_layers=max_number_of_layers),
+    return [
+            # NeuralNetworkExperiment(name="Very Good Cars", target=data.target_classification_very_good,
+            #                         min_layers=min_number_of_layers, max_layers=max_number_of_layers),
+            # NeuralNetworkExperiment(name="Good Cars", target=data.target_classification_good,
+            #                         min_layers=min_number_of_layers, max_layers=max_number_of_layers),
+            # NeuralNetworkExperiment(name="Acceptable Cars", target=data.target_classification_acceptable,
+            #                         min_layers=min_number_of_layers, max_layers=max_number_of_layers),
+            # NeuralNetworkExperiment(name="UnAcceptable Cars", target=data.target_classification_unacceptable,
+            #                         min_layers=min_number_of_layers, max_layers=max_number_of_layers),
             NeuralNetworkExperiment(name="of Cars", target=data.target_classification,
                                     min_layers=min_number_of_layers, max_layers=max_number_of_layers)]
 
@@ -228,7 +229,9 @@ wage_data = AdultData()
 car_data_folder = 'car_data'
 wage_data_folder = 'wage_data'
 
-# run_decision_tree_experiments(car_data_folder, car_data.features, generate_decision_tree_experiments_for_car_data(car_data))
+car_data.generate_csv()
+
+#run_decision_tree_experiments(car_data_folder, car_data.features, generate_decision_tree_experiments_for_car_data(car_data))
 #run_boosted_tree_experiments(car_data_folder, car_data.features, generate_boosted_tree_experiments_for_car_data(car_data))
 
 # run_decision_tree_experiments(wage_data_folder, wage_data.features, generate_decision_tree_experiments_for_wage_data(wage_data))
@@ -238,13 +241,13 @@ wage_data_folder = 'wage_data'
 # run_knn_experiments(car_data_folder, car_data.features, generate_knn_experiments_for_car_data(car_data))
 #run_knn_experiments(wage_data_folder, wage_data.features, generate_knn_experiments_for_wage_data(wage_data))
 
-# run_neural_network_experiments(car_data_folder, car_data.features,
-#                                generate_neural_network_experiments_for_car_data(car_data))
+run_neural_network_experiments(car_data_folder, car_data.features,
+                                generate_neural_network_experiments_for_car_data(car_data))
 # run_neural_network_experiments(wage_data_folder, wage_data.features,
 #                                generate_neural_network_experiments_for_wage_data(wage_data))
 
 #run_svm_experiments(car_data_folder, car_data.features, generate_svm_experiments_for_car_data(car_data))
-run_svm_experiments(wage_data_folder, wage_data.features, generate_svm_experiments_for_wage_data(wage_data))
+#run_svm_experiments(wage_data_folder, wage_data.features, generate_svm_experiments_for_wage_data(wage_data))
 
 #car_data.generate_target_distribution_plot()
 #wage_data.generate_target_distribution_plot()
