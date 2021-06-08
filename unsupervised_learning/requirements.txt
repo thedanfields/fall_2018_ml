@@ -42,7 +42,7 @@ pandocfilters==1.4.2
 pathlib2==2.3.0
 peewee==2.10.2
 pickleshare==0.7.4
-Pillow==4.2.1
+Pillow==8.2.0
 prompt-toolkit==1.0.15
 py==1.4.34
 Pygments==2.2.0
